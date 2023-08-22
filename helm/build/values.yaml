@@ -1,0 +1,15 @@
+app:
+  name: thisisalongusertest-poi-gateway-app
+  namespace: thisisalongusertest
+  cluster: .apps.igb2792k.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-ms/thisisalongusertest-gateway
+  org: rhdh-ms
+  name: thisisalongusertest-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: thisisalongusertest/poi-gateway-app
+  tag: latest
